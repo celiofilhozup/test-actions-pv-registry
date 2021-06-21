@@ -6,7 +6,6 @@ on:
 
 jobs:
   run_pv_docker_image:
-    name: run-pv-image
     container:
       image: 462986224002.dkr.ecr.us-east-1.amazonaws.com/celio-test-orange
       credentials:
