@@ -7,9 +7,8 @@ on:
 jobs:
   run_pv_docker_image:
     name: run-pv-image
-    runs-on: ubuntu-latest
     container:
-      image: octocat/ci-image:latest
+      image: 462986224002.dkr.ecr.us-east-1.amazonaws.com/celio-test-orange
       credentials:
-        username: mona
-        password: ${{ secrets.docker_hub_password}}
+        username: AWS
+        password: ${{ secrets.pass}}
