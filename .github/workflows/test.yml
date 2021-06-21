@@ -1,0 +1,15 @@
+name: test-priv-registry
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  run_pv_docker_image:
+    name: run-pv-image
+    runs-on: ubuntu-latest
+    container:
+      image: octocat/ci-image:latest
+      credentials:
+        username: mona
+        password: ${{ secrets.docker_hub_password}}
