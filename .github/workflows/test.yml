@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Print a greeting
         run: |
-          cat /entrypoint.sh
+          /entrypoint.sh
