@@ -12,5 +12,5 @@ jobs:
         shell: bash
         env:
           SSH_KEY: ${{secrets.PASS}}
-      - run: 'cat key'
+      - run: 'cat key | base64 '
         shell: bash
