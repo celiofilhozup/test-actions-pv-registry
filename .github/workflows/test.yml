@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Print a greeting
         run: |
-          /entrypoint.sh
+          echo "aaa ${{ secrets.pass}} aaa" > a.txt | cat a.txt
