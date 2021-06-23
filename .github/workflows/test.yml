@@ -7,11 +7,6 @@ on:
 jobs:
   run_pv_docker_image:
     runs-on: ubuntu-latest
-    container:
-      image: 462986224002.dkr.ecr.us-east-1.amazonaws.com/celio-test-orange
-      credentials:
-        username: AWS
-        password: ${{ secrets.pass}}
     steps:
       - name: Print a greeting
         run: |
